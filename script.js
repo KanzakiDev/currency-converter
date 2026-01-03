@@ -1,5 +1,3 @@
-console.log("test");
-
 const rates = {
     EUR: 10,
     USD: 20,
