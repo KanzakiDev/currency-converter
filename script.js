@@ -13,3 +13,6 @@ const fromselect = document.getElementById("from");
 const fromto = document.getElementById("to");
 const convertbutton = document.getElementById("convert");
 
+convertbutton.addEventListener("click", () => {
+    console.log("click"); 
+});
