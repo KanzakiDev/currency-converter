@@ -60,12 +60,36 @@ button:focus-visible {
 /* Input and Select */
 input, select {
     width: 100%;
-    padding: 10px;
+    padding: 12px 16px;
     margin: 8px 0;
-    border: 1px solid #ccc;
+    border: 2px solid #4a5568;
     border-radius: 8px;
     box-sizing: border-box;
     font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    background: rgba(45, 55, 72, 0.6);
+    color: #e0e0e0;
+    transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #718096;
+    background: rgba(45, 55, 72, 0.8);
+    box-shadow: 0 0 0 3px rgba(113, 128, 150, 0.2);
+}
+
+input::placeholder {
+    color: #a0aec0;
+}
+
+select {
+    cursor: pointer;
+}
+
+select option {
+    background: #2d3748;
+    color: #e0e0e0;
 }
 
 /* disable input arrows */
